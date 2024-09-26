@@ -10,7 +10,7 @@ require mathlib from git "https://github.com/leanprover-community/mathlib4" @ "v
 
 @[default_target]
 lean_lib «putnam» where
-  globs := #[.submodules `src]
+  globs := #[.one `src.putnam_1962_a1] -- to make this demo fast
 
 lean_lib «putnam_with_solutions» where
   globs := #[.submodules `solutions_replaced_new]
